@@ -90,7 +90,11 @@ function css() {
     .pipe(dest(path.build.css));
 }
 function js() {
-  return src(["node_modules/wowjs/dist/wow.min.js", path.src.js])
+  return src([
+    "node_modules/wowjs/dist/wow.min.js",
+    "node_modules/swiper/swiper-bundle.min.js",
+    path.src.js,
+  ])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
     .pipe(dest(srcPath + "/js/"))
