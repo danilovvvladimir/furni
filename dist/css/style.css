@@ -5048,19 +5048,108 @@ body {
 .testimonials__button {
   position: absolute;
   top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #fff;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+}
+.testimonials__button path {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.testimonials__button:hover {
+  background-color: #3b5d50;
+}
+.testimonials__button:hover path {
+  stroke: #fff;
 }
 .testimonials__button--next {
-  right: 0px;
+  right: -50px;
   z-index: 10;
 }
 .testimonials__button--prev {
-  left: 0px;
+  left: -50px;
 }
 
 .swiper-pagination-bullet {
   background-color: #3b5d50;
+}
+
+.blog {
+  padding-top: 40px;
+  background-color: #eff2f1;
+}
+.blog__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 36px;
+}
+.blog__link {
+  color: #2f2f2f;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  padding-bottom: 5px;
+}
+.blog__link:hover {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #2f2f2f;
+}
+.blog__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blog__item-title {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+.blog__item-imagebox {
+  width: 350px;
+  height: 220px;
+  margin-bottom: 40px;
+}
+.blog__item-img {
+  max-height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+}
+.blog__item-author, .blog__item-date {
+  font-weight: 600;
+}
+.blog__item-link {
+  color: #2f2f2f;
+}
+.blog__item-link:hover {
+  text-decoration: underline;
 }

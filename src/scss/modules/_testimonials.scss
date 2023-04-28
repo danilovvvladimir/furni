@@ -45,14 +45,31 @@
   &__button {
     position: absolute;
     top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     transform: translateY(-50%);
+    transition: all 0.5s ease;
+    background-color: #fff;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    path {
+      transition: all 0.5s ease;
+    }
+    &:hover {
+      background-color: $main-color;
+      path {
+        stroke: #fff;
+      }
+    }
     &--next {
-      right: 0px;
+      right: -50px;
       z-index: 10;
     }
     &--prev {
-      left: 0px;
+      left: -50px;
     }
   }
 }
