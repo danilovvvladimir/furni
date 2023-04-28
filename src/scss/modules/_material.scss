@@ -1,0 +1,40 @@
+.material {
+  padding-top: 164px;
+  margin-bottom: 161px;
+  &__info {
+    max-width: 230px;
+  }
+  &__title {
+    font-size: 34px;
+    line-height: 41px;
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    margin-bottom: 30px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__items {
+    display: flex;
+    gap: 80px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 356px;
+  }
+
+  &__item-name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__item-price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

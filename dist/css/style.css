@@ -3797,6 +3797,13 @@ body {
   color: #2f2f2f;
 }
 
+.subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #6a6a6a;
+}
+
 .btn {
   cursor: pointer;
   background-color: transparent;
@@ -3821,8 +3828,15 @@ body {
   color: #2f2f2f;
   background-color: #f9bf29;
 }
+.btn--black {
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+}
+
 .header {
   position: fixed;
+  z-index: 10;
   width: 100%;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -3927,4 +3941,57 @@ body {
   top: -40px;
   right: -20px;
   width: 100%;
+}
+
+.material {
+  padding-top: 164px;
+  margin-bottom: 161px;
+}
+.material__info {
+  max-width: 230px;
+}
+.material__title {
+  font-size: 34px;
+  line-height: 41px;
+  margin-bottom: 30px;
+}
+.material__subtitle {
+  margin-bottom: 30px;
+}
+.material__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.material__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 80px;
+}
+.material__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  height: 356px;
+}
+.material__item-name {
+  font-size: 16px;
+  line-height: 24px;
+}
+.material__item-price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
 }

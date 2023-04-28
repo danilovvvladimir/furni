@@ -13,6 +13,12 @@ body {
   line-height: 41px;
   color: $title-color;
 }
+.subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #6a6a6a;
+}
 
 .btn {
   cursor: pointer;
@@ -36,5 +42,8 @@ body {
     background-color: $accent-color;
   }
   &--black {
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
   }
 }
