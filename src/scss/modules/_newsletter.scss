@@ -1,0 +1,55 @@
+.newsletter {
+  padding-top: 100px;
+  &__wrapper {
+    position: relative;
+  }
+  &__title {
+    padding-left: 34px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 22px;
+      height: 100%;
+      background-image: url(../../images/icons/letter.svg);
+      background-repeat: no-repeat;
+    }
+  }
+  &__img {
+    position: absolute;
+    right: 0;
+    top: -180px;
+  }
+}
+.form {
+  display: flex;
+  &__input {
+    width: 262px;
+    padding: 14px 22px;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    margin-right: 15px;
+  }
+  &__btn {
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: $main-color;
+    path {
+      transition: all 0.5s ease;
+    }
+    &:hover {
+      path {
+        fill: $accent-color;
+      }
+    }
+  }
+}
