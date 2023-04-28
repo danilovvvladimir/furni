@@ -1,0 +1,86 @@
+.choose {
+  padding-top: 200px;
+  background-color: #eff2f1;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    max-width: 500px;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    max-width: 442px;
+    margin-bottom: 88px;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    gap: 42px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -90px;
+      right: -80px;
+      width: 270px;
+      height: 300px;
+      background: rgba(53, 115, 110, 0.1);
+      border-radius: 20px;
+    }
+  }
+  &__item {
+    max-width: 216px;
+    margin-bottom: 24px;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 10px;
+      width: 33px;
+      height: 33px;
+      background-color: rgba(53, 115, 110, 0.2);
+      border-radius: 50%;
+      z-index: 1;
+    }
+  }
+  &__item-img {
+    z-index: 5;
+    margin-bottom: 12px;
+  }
+  &__item-title {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 9px;
+  }
+  &__item-subtitle {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 3px;
+  }
+  &__imagebox {
+    width: 490px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -100px;
+      top: -75px;
+      z-index: 1;
+      background-image: url(../../images/decorations/dotted-gold.svg);
+      background-repeat: no-repeat;
+      width: 262px;
+      height: 176px;
+    }
+  }
+  &__image {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+}
