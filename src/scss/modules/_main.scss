@@ -1,0 +1,46 @@
+.main {
+  padding-top: 76px;
+  background-color: $main-color;
+  &__wrapper {
+    padding-top: 144px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__title {
+    color: #fff;
+    font-size: 54px;
+    line-height: 65px;
+    margin-bottom: 105px;
+  }
+  &__buttons {
+    display: flex;
+    gap: 15px;
+  }
+  &__info {
+    max-width: 420px;
+  }
+  &__imagebox {
+    max-width: 700px;
+    width: 100%;
+    z-index: 5;
+    position: relative;
+    &::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: -25px;
+      right: -90px;
+      width: 260px;
+      height: 176px;
+      background-image: url(../images/decorations/dotted.svg);
+      background-repeat: no-repeat;
+    }
+  }
+  &__image {
+    position: relative;
+    top: -40px;
+    right: -20px;
+    width: 100%;
+  }
+}

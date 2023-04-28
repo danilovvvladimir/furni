@@ -1,0 +1,40 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1110px;
+}
+.title {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 41px;
+  color: $title-color;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 11px 37px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $title-color;
+    background-color: #f9bf29;
+    border: 1px solid $title-color;
+  }
+  &--yellow {
+    border: 1px solid $accent-color;
+    color: $title-color;
+    background-color: $accent-color;
+  }
+  &--black {
+  }
+}
